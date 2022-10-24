@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<html lang="ru">
+  <head>
+    <title>interesting facts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0"
+    <link rel="shortcut icon"href="https://thenounproject.com/icon/glasses-5241956/"/>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+
+ </head>
+ <h1>Узнай интересный факт</h1>
+  <body>
+    <main class="main">
+      <section class="intro">
+      </section>
+    </main>
+    <center><div id="guoteDisplay">
+    </div></center>
+      <button onclick="newQuote()" class="custom-btn btn-3"><span>сгенерировать</span>
+      </button>
+      <script type="text/javascript">
+      var quotes = ["Самая короткая война продолжалась только 38 минут . Она была между Англией и Занзибаром","До 18 века у России не было флота","Когда штурмовали Зимний дворец , погибло всего лишь 6 человек","Адольф Гитлер участвовал в разработке Volkswagen Beetle","В 17 и 18 веках в Англии трубочистами были маленькие дети","Однажды Наполеон вступил в битву с кроликами и проиграл","Современный флаг России появился при Петре I","Нашествие монголо-татарского ига на Русь длилось более 250 лет","В Англии можно было продать свою жену на ярмарке"];
+         function newQuote() {
+         var randomNumber = Math.floor(Math.random() * quotes.length);
+         document.getElementById('guoteDisplay').innerHTML = quotes[randomNumber];
+
+      }
+</script>
+
+  </body>
+</html>
